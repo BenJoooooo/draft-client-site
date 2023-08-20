@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjectOne</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ProjectOne.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+
+        <!-- Logo Container in block position -->
+        <div class="container-fluid text-md-center d-md-block d-none logo-color"> <!-- Display none at default, display block at medium screen, logo-color custom-->
+            <img class="img-fluid m-3" src="asset/piclogo.png" />
+        </div>
+
+        <!-- Navbar span-->
+        <nav class="navbar navbar-expand-md navbar-toggleable-md border-bottom navbar-light box-shadow logo-color"> <!-- nav-bg-color custom -->
+            <div class="container-fluid p-0">
+                
+                <div class="d-md-none"> <!-- Display none at medium screen, only appear at mobile view-->
+                    <img class="img-fluid m-3" src="asset/piclogo.png" />
+                </div>
+
+                <button class="navbar-toggler collapsed m-4" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="close btn-close p-4"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="navbar-collapse collapse justify-content-center nav-bg-color">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link m-3 p-0" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-3 p-0" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link m-3 p-0" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-3 p-0">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-3 p-0">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid p-0">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted text-center">
+        <div class="container">
+            <p class="m-0">Copyright &copy; @DateTime.Now.Year | Powered by Web Creatives </p><!-- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> -->
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

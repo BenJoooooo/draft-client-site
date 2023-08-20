@@ -1,0 +1,7 @@
+C:\Users\benjo\source\repos\ProjectOne\ProjectOne\obj\Release\net7.0\PubTmp\Out\ProjectOne.exe
+C:\Users\benjo\source\repos\ProjectOne\ProjectOne\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\benjo\source\repos\ProjectOne\ProjectOne\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\benjo\source\repos\ProjectOne\ProjectOne\obj\Release\net7.0\PubTmp\Out\ProjectOne.dll
+C:\Users\benjo\source\repos\ProjectOne\ProjectOne\obj\Release\net7.0\PubTmp\Out\ProjectOne.deps.json
+C:\Users\benjo\source\repos\ProjectOne\ProjectOne\obj\Release\net7.0\PubTmp\Out\ProjectOne.runtimeconfig.json
+C:\Users\benjo\source\repos\ProjectOne\ProjectOne\obj\Release\net7.0\PubTmp\Out\ProjectOne.pdb

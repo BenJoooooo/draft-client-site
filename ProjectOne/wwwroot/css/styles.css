@@ -1,0 +1,174 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway&family=Roboto+Slab:wght@900&display=swap');
+
+:root {
+    --logo-color: #f2e4c1;
+    --nav-bg-color: #fffbf2;
+    --nav-color: #a28258;
+    --nav-hover: #bda98e;
+    --font-color: #c29b67;
+    --font-dark-color: #bda98e;
+    --bg-dark-color: #d9c4a9;
+    --statement: #bc9751;
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--nav-color) !important;
+    font-weight: 700 !important;
+    font-size: 1.5rem !important;
+    padding-left: 2rem !important;
+}
+
+.nav-link:hover {
+    color: var(--nav-hover) !important;
+}
+
+.logo-color {
+    background-color: var(--logo-color);
+}
+
+.nav-bg-color {
+    background-color: var(--nav-bg-color);
+}
+
+/* For navbar hamburger with custom style */
+
+.navbar-toggler {
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+    border:none;
+}
+
+.navbar-toggler > .close {
+    display: inline;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler.collapsed > .close, .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+    display: none;
+}
+
+/* Main section with background */
+.bg-image {
+    background-image: url('https://mdbootstrap.com/img/new/standard/city/041.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+iframe {
+    min-width: 200px;
+    min-height: 200px;
+    width: 60%;
+    height: 60%;
+    aspect-ratio: 1/1;
+}
+
+h1, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.colored-text {
+    color: var(--font-color);
+}
+
+.colored-text:hover {
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+    text-transform: uppercase;
+}
+
+.cta-btn {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.cta-btn:hover {
+    outline: #c29b67;
+    border: none;
+    background-color: #c29b67;
+    transition: all 1s;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    scale: 1.1;
+}
+
+.align-custom .title {
+    color: var(--font-dark-color);
+    font-family: 'Parisienne', cursive;
+    margin: 0;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.align-custom .name {
+    font-family: 'Roboto Slab', serif;
+    color: var(--font-dark-color);
+    font-size: 4rem;
+    margin-block: 2rem;
+}
+
+.align-custom .description {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--font-dark-color);
+    word-spacing: 3px;
+}
+
+.text-center-custom {
+    text-align: center;
+}
+
+.statement-about {
+    font-family: 'Raleway', sans-serif;
+    color: var(--statement);
+    font-weight: 700;
+}
+
+.custom-business-without {
+    width: 70%;
+    background-color: var(--logo-color);
+    padding: 2rem;
+    border-radius: 4rem;
+    margin: 2rem;
+}
+
+.custom-business-without h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: clamp(1rem, 4vw, 5rem);
+    font-weight: 700;
+    color: var(--statement);
+}
+
+
+.about-image {
+    min-width: 250px;
+    width: 60%;
+    border-radius: 2rem;
+    border: 7px solid var(--font-color);
+}
+
+footer {
+    background-color: var(--logo-color);
+    font-family: 'Poppins', sans-serif !important;
+}
+
+    footer .container p {
+        color: #f6f6f6;
+        font-size: clamp(.5rem, 2vw, 1rem);
+        font-weight: 700;
+    }
